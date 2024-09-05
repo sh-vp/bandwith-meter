@@ -5,7 +5,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/sh-vp/bandwith-meter/main/shad
 ```
 
 -For Example :
-.bash shadow-bandwith.sh -i eth0
+bash <(curl -Ls https://raw.githubusercontent.com/sh-vp/bandwith-meter/main/shadow-bandwith.sh) -i eth0
 
 you can find your server interface name with below command :
 ```
