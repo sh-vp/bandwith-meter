@@ -17,7 +17,7 @@ if ((rx_mb < 1024)); then
 elif ((rx_mb >= 1024)); then
     rx_unit="GB"
     rx_value=$(printf "%.2f" "$(bc -l <<< "$rx_mb / 1024")")
-else
+elif ((rx_mb >= 1024 * 1024)); then
     rx_unit="TB"
     rx_value=$(printf "%.2f" "$(bc -l <<< "$rx_mb / (1024 * 1024)")")
 
@@ -28,7 +28,7 @@ if ((tx_mb < 1024)); then
 elif ((tx_mb >= 1024)); then
     tx_unit="GB"
     tx_value=$(printf "%.2f" "$(bc -l <<< "$tx_mb / 1024")")
-else
+elif ((rx_mb >= 1024 * 1024)); then
     tx_unit="TB"
     tx_value=$(printf "%.2f" "$(bc -l <<< "$tx_mb / (1024 * 1024)")")
 
