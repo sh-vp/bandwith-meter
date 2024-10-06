@@ -48,9 +48,9 @@ fi
 echo ""
 echo "  ===================="
 echo "  Interface ${interface}:"
-echo "  RX: ${rx_value} ${rx_unit}"
-echo "  TX: ${tx_value} ${tx_unit}"
-echo "  Total: ${total_value} ${total_unit}"
+echo "    RX:    ${rx_value} ${rx_unit}"
+echo "    TX:    ${tx_value} ${tx_unit}"
+echo "    Total: ${total_value} ${total_unit}"
 echo "  ===================="
 echo ""
 
