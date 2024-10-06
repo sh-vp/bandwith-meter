@@ -10,7 +10,7 @@ tx_bytes=$(cat "/sys/class/net/${interface}/statistics/tx_bytes")
 
 rx_mb=$((rx_bytes / 1048576))
 tx_mb=$((tx_bytes / 1048576))
-total_mb=$tx_mb+$rx_mb
+total_mb=$((tx_mb + rx_mb))
 
 if ((rx_mb < 1024)); then
     rx_unit="MB"
